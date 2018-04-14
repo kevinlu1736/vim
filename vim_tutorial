@@ -1,0 +1,113 @@
+1. Finding files
+
+vimrc
+"Search down recursively into subdirectory
+"Provides tab-completion for all file-related tasks
+set path+=**
+
+"Display all matching files when we tab complete
+set wildmenu 
+
+cli
+find tcp.rb
+find *cp*
+find *.rb  , tab
+ls "list all files already been visited
+b tc "jump to the file uniquely contains tc in the file name
+
+2. Tag jumping
+
+vimrc
+" Create the `tags` file, There will be a tags file in the directory to save all the tags
+"! means shell command
+command! MakeTags !ctags -R .
+
+shortcuts
+ctrl + ]
+g, ctrl + ] "list all
+ctrl + t "back 1 level 
+ctrl + o "go to original place
+
+3. auto complete
+^x^n just this file
+^n anything
+^n ^p to go forth & backward in the menu
+^x^f for filenames
+^x^] for tags only
+
+4.file browser
+" Tweaks for browsing
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+shortcut
+:edit . //show a menu of current folder 
+t for show file in tab, v for show file in vertical splitted windows
+
+5. template 
+nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+
+6. copy & paste
+register
+default register , also called " register
+"a dd 
++ register connected to system clipboard
+
+7. help system
+help i_^n // insert mode ctrl+n
+helpgrep grep in documentation cp cn
+
+cli
+tabnew 
+tabo "close all other tab
+tabm
+tabc "c stands for close
+tabnext
+
+shortcut
+shift i "goto first letter
+shift s "delete line goto the start of the line(indented)
+shift C "delete from cursor to the end of line and begin insert
+shift W goto next WORD "after space
+# - backward search
+g* - unbounded search  e.g go for got, go, gone
+/\cforward "search forward ignorecase
+~ "toggle case
+g~ + move "toggle & move
+{} "next empty line
+q[reg] "start recording to reg register, q to stop recording, @[reg] to execute
+
+block insertion
+ctrl+b, [num] s
+
+TRUCK,fuck
+TRUCK,fuck
+TRUCK,fuck
+
+Directories
+syntax "put newest syntax here to overwrite 
+after "execute anyway
+
+script
+no <up> <Nop>
+labbr email kevinlu@163.com  "insert mode error correction or abbreviation
+let @a = @c
+
+mergecode
+vimdiff
+.gitconfig
+[diff]
+external = git_diff_wrapper
+
+git_diff_wrapper
+vimdiff "$1" "$2"
+
+shortcurts
+]c "next change
+[c "prev change
+do "get things back 
+dp "put things
