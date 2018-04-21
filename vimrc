@@ -54,7 +54,7 @@ let g:airline_symbols.linenr = '⭡'
 "let g:airline_symbols.readonly = ''
 "let g:airline_symbols.linenr = ''
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 set laststatus=2
 
 "pathogen
@@ -102,4 +102,6 @@ endif
 set nu
 set rnu
 set tabstop=2
+
+set shell=bash\ -i
 
