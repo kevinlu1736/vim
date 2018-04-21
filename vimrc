@@ -102,6 +102,5 @@ endif
 set nu
 set rnu
 set tabstop=2
-
 set shell=bash\ -i
 
