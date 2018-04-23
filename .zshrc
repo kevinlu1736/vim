@@ -96,7 +96,6 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/.composer/vendor/bin:/Users/ly/bin:/Users/ly/development/android/android_sdk/platform-tools:$PATH
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH" 1>/dev/null 2>&1
-export PS1='>'
 
 #source  ~/powerlevel9k/powerlevel9k.zsh-theme
 #ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -110,16 +109,7 @@ source /usr/local/share/autojump/autojump.zsh
 
 plugins=(tmux tmuxinator)
 
-alias text='adb shell input text'
-alias enter='adb shell input keyevent 66'
-
-alias login='text 78945661233 && enter && text QAZwsx@1 && enter && enter'
-alias login_a='text 18094223992 && enter && text ford@1 && enter && enter'
-alias login_b='text 17602100014 && enter && text ford@1 && enter && enter'
-alias lw_login1='text 13818825311 && enter && text Ford@2'
-alias lw_login2='text 13916718531 && enter && text a12345!'
-alias ls='echo "==============================================";pwd;
-echo "==============================================";ls -G'
+source ./shell_common 
 
 ZSH_THEME="lyfav"
 
