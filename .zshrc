@@ -118,7 +118,9 @@ alias login_a='text 18094223992 && enter && text ford@1 && enter && enter'
 alias login_b='text 17602100014 && enter && text ford@1 && enter && enter'
 alias lw_login1='text 13818825311 && enter && text Ford@2'
 alias lw_login2='text 13916718531 && enter && text a12345!'
-alias ls='pwd;ls -G'
+alias ls='echo "==============================================";pwd;
+echo "==============================================";ls -G'
+
 ZSH_THEME="lyfav"
 
 #export http_proxy=http://19.12.16.64:83
