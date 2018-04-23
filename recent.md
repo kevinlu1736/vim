@@ -1,3 +1,31 @@
+###tmux
+1. shell
+	- kill-session -t [session_name]
+	- tmux ls
+	- tmux list-sessions
+	- tmux attach-session -t 0
+2. tmux
+	- tmux <Cr>
+	- ctrl+b & //close current window
+	- ctrl+b ? //help
+	- ctrl+b c //create a second window
+	- ctrl+b n // next window
+	- ctrl+b p // prev window
+	- ctrl+b [num] // [num]th window
+	- ctrl+b d //detach
+	- ctrl+b , //rename window
+	- ctrl+w  //list window
+  - ctrl+%  //horizontally split-window, add a new pane
+	- ctrl+" //split-window vertically, add a new pane
+	- ctrl+ [arrow] //move between pane
+	- ctrl+x //remove pane
+	- ctrl+: //enter comman mode
+	- ctrl+b, option + [arrow] //adjust window size
+	- ctrl+b, z //toggle full screen
+3. session
+	- tmux new -s [session_name]
+
+
 ###chrome
 1. Address Bar
 	- cmd + l//go to address bar
@@ -80,3 +108,5 @@
 - no <up> <Nop>
 - labbr email kevinlu@163.com  "insert mode error correction or abbreviation
 - let @a = @c
+
+
