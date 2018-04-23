@@ -37,6 +37,7 @@
 
 
 ###vim
+- di" "delete between double quotes
 - {} "next empty line
 - q[reg] "start recording to reg register, q to stop recording, @[reg] to execute
 - g* - unbounded search  e.g go for got, go, gone
