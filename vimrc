@@ -67,6 +67,9 @@ filetype plugin indent on
 "nerdtree
 nnoremap <leader>nt <Esc>:NERDTreeToggle<Cr>
 
+"tagbar
+nnoremap <leader>tb <Esc>:Tabbar<Cr>
+
 "colorscheme
 colorscheme jellybeans
 

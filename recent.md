@@ -19,11 +19,13 @@
 	- ctrl+" //split-window vertically, add a new pane
 	- ctrl+ [arrow] //move between pane
 	- ctrl+x //remove pane
-	- ctrl+: //enter comman mode
+	- ctrl+: //enter command mode
 	- ctrl+b, option + [arrow] //adjust window size
 	- ctrl+b, z //toggle full screen
 3. session
 	- tmux new -s [session_name]
+4. command
+	- swap-window -s [source] -t [destination]
 
 
 ###chrome
