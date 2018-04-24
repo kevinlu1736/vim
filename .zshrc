@@ -109,7 +109,7 @@ source /usr/local/share/autojump/autojump.zsh
 
 plugins=(tmux tmuxinator)
 
-source ./shell_common 
+source ~/.vim/shell_common 
 
 ZSH_THEME="lyfav"
 
