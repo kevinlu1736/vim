@@ -58,7 +58,7 @@ let g:airline_symbols.linenr = '⭡'
 set laststatus=2
 
 "pathogen
-filetype off
+filetype on
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on
@@ -85,8 +85,20 @@ map <Leader>ef <Plug>(easymotion-bd-f)
 "airline
 let g:airline_theme='papercolor'
 
+"for syntastic
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+
+
 "debug
-nnoremap <leader>debug <Esc>:!python3 %<Cr>
+nnoremap <leader>pd <Esc>:!python3 %<Cr>
+
 "remove all break points
 nnoremap <leader>rmbs <Esc>:g/pdb.set_trace/d<Cr>
 
